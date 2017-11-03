@@ -9,7 +9,7 @@ public class MainOracle {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
 			// Establecemos la conexion con la BD
-			Connection conexion = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521XE", "EJEMPLO", "root");
+			Connection conexion = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "EJEMPLO", "EJEMPLO");
 
 			// Preparamos la consulta
 			Statement sentencia = conexion.createStatement();

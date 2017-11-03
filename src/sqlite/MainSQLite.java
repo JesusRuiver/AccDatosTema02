@@ -6,10 +6,10 @@ public class MainSQLite {
 	public static void main(String[] args) {
 		try {
 			// Cargar el driver
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("org.sqlite.JDBC");
 
 			// Establecemos la conexion con la BD
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo", "ejemplo", "ejemplo");
+			Connection conexion = DriverManager.getConnection("jdbc:sqlite:C:/sqlite/ejemplo.db");
 
 			// Preparamos la consulta
 			Statement sentencia = conexion.createStatement();
