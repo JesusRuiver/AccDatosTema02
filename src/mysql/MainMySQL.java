@@ -9,7 +9,7 @@ public class MainMySQL {
 			Class.forName("com.mysql.jdbc.Driver");
 
 			// Establecemos la conexion con la BD
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo", "ejemplo", "ejemplo");
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo","root", "root");
 
 			// Preparamos la consulta
 			Statement sentencia = conexion.createStatement();
