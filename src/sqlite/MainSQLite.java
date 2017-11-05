@@ -9,7 +9,7 @@ public class MainSQLite {
 			Class.forName("org.sqlite.JDBC");
 
 			// Establecemos la conexion con la BD
-			Connection conexion = DriverManager.getConnection("jdbc:sqlite:C:/sqlite/ejemplo.db");
+			Connection conexion = DriverManager.getConnection("jdbc:sqlite:D:/sqlite/BBDD/ejemplo.db");
 
 			// Preparamos la consulta
 			Statement sentencia = conexion.createStatement();
