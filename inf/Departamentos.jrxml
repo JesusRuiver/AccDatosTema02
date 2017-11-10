@@ -31,16 +31,62 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="7" width="260" height="31" uuid="2bd77bf7-117f-4f7e-bbaf-9516635fad41"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Datos Departamentos]]></text>
+			</staticText>
+		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="22" splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch"/>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="20" width="170" height="20" uuid="e8f8de3d-f084-44a3-bd9c-5c1247a62d55"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Número Departamento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="205" y="20" width="111" height="20" uuid="b60ab8a6-a9f8-490a-8273-0666eb49e346"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Departamento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="24" width="111" height="20" uuid="ee34cf7b-2188-444b-9327-10c3e7a94f8c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Localidad]]></text>
+			</staticText>
+		</band>
 	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch"/>
+		<band height="66" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="11" width="100" height="30" uuid="16502b73-d43c-4f71-8990-2f88d6ea5313"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{dept_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="11" width="100" height="30" uuid="1de5c7dd-10dd-4907-bda6-08eda3020e89"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{dnombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="11" width="100" height="30" uuid="b2904b92-a6ab-4cad-b571-6dc87f247733"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{loc}]]></textFieldExpression>
+			</textField>
+		</band>
 	</detail>
 	<columnFooter>
 		<band height="45" splitType="Stretch"/>
